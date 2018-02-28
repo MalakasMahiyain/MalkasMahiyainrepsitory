@@ -1,6 +1,6 @@
-##x = 3  #Create variable x and assign value 3 to it
-##x = x*x  #Bind x to value 9
-##print x
+x = 3  #Create variable x and assign value 3 to it
+x = x*x  #Bind x to value 9
+print x
 ##y = raw_input('enter a number:')
 ##print type(y)
 ##print y
