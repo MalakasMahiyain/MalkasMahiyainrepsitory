@@ -6,7 +6,7 @@
 
 
 
-
+import os
 import pickle
 import numpy
 import matplotlib.pyplot as plt
@@ -39,7 +39,10 @@ def Draw(pred, features, poi, mark_poi=False, name="image.png", f1_name="feature
 
 
 ### load in the dict of dicts containing all the data on each person in the dataset
-data_dict = pickle.load( open("../final_project/final_project_dataset.pkl", "r") )
+#data_dict = pickle.load( open("../final_project/final_project_dataset.pkl", "r") )
+#data_dict = pickle.load( open("../git/python101/MachineLearning/final_project/final_project_dataset.pkl", "r") )
+cwd = os.getcwd()
+data_dict = pickle.load( open(cwd+"/git/python101/MachineLearning/final_project/final_project_dataset.pkl", "r") )
 ### there's an outlier--remove it! 
 data_dict.pop("TOTAL", 0)
 
