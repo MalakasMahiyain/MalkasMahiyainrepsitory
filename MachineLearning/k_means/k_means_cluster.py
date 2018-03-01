@@ -11,7 +11,8 @@ import pickle
 import numpy
 import matplotlib.pyplot as plt
 import sys
-sys.path.append("../tools/")
+#sys.path.append("../tools/")
+sys.path.append(cwd+"/git/python101/MachineLearning/tools/")
 from feature_format import featureFormat, targetFeatureSplit
 
 
