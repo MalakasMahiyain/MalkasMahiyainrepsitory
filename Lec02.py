@@ -1,14 +1,15 @@
 x = 3  #Create variable x and assign value 3 to it
 x = x*x  #Bind x to value 9
 print x
-##y = raw_input('enter a number:')
-##print type(y)
-##print y
-##y = float(raw_input('Enter a number: '))
-##print type(y)
-##print y
-##print y*y
-##
+
+y = raw_input('enter a number:')
+print type(y)
+print y
+y = float(raw_input('Enter a number: '))
+print type(y)
+print y
+print y*y
+
 ##x = int(raw_input('Enter an integer: '))
 ##if x%2 == 0:
 ##    print 'Even'
