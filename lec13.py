@@ -83,6 +83,19 @@ def testRoll(n = 10):
     print result
 
 import pylab
+import numpy
+x=numpy.array(range(99))
+epsilon = 0.001
+y=log(x+epsilon)    
+y2=(x+epsilon)**2   #polynomial - quadratic
+y3=1.5**(x+epsilon)   #exponential
+pylab.plot(x,y,label="log")
+pylab.plot(x,y2,label="quadratic poly")
+pylab.plot(x,y3,label="expl")
+pylab.yscale('log')
+pylab.legend()
+pylab.show()
+
 
 ##pylab.plot([1,2,3,4], [1,2,3,4])
 ##pylab.plot([1,4,2,3], [5,6,7,8])
