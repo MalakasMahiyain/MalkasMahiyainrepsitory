@@ -1,0 +1,607 @@
+﻿1/13
+print "Welcome to Python!"
+
+2/13 variables
+my_variable = 10
+print my_variable
+
+3/13 booleans
+booleans, true or false
+you can use variables to store booleans
+a = true
+b = false
+
+4/13 you've been reassigned
+you can reassign varables
+
+5/13 whitespace
+whitespace is important, used to structure code
+indentation error
+
+6/13 whitespace means rightspace
+on codecademy we wil use two-space indentation. elsewhere you may see four-space indentation. be consistent
+
+def spam():
+  eggs = 12
+  return eggs
+print spam ()
+
+console outputs:
+12
+
+7/13 a matter of interpretation
+rightside window, interpreter
+spam = True
+eggs = False
+
+8/13 single line comments
+# commented out
+
+9/13 multi line comments
+triple quotation marks
+"""lorem ipsum dlor sic amet"""
+
+10/13 math
+count_to = 42+69
+print count_to
+
+11/13 exponetiation
+can combine math with other data types, ie booleans
+
+eight = 2 ** 3
+
+#2 to the power of 3
+
+** is exponentiation
+
+12/13 modulo
+
+13/13 bringing it all together
+recap
+
+x = "False"
+is a string
+
+1/5
+
+2/5
+6.75% is 0.0675 not 0.675
+ 
+3/5
+15% tax
+
+4/5
+meal =meal+meal*tax
+you can reassign a variable in terms of itself
+
+1/16
+strings
+brian = "Hello life!"
+ok can use punctuation inside strings
+
+2/16 string assignment practice
+
+3/16
+escaping characters
+"There's a snake in my boot!"
+
+apostrophe breaks
+add backslash not substitute
+"There\'s a snake in my boot!"
+
+4/16 access by index
+index begins at 0
+
+fifth_letter = "MONTY"[4]
+
+5/16 string methods
+
+6/16 lower()
+
+8/16 str()
+
+9/16 dot notation
+
+Let's take a closer look at why you use len(string) and str(object), but dot notation (such as "String".upper()) for the rest.
+
+lion = "roar"
+len(lion)
+lion.upper()
+
+Methods that use dot notation only work with strings.
+
+On the other hand, len() and str() can work on other data types.
+
+10/16 printing strings
+area where we've been writing code is the editor
+
+the console is where the results show
+
+print displays code in the console
+
+12/16 string concatenation
+print "Spam " + "and " + "eggs"
+
+13/16 explicit string conversion
+
+Sometimes you need to combine a string with something that isn't a string. In order to do that, you have to convert the non-string into a string.
+
+print "I have " + str(2) + " coconuts!"
+
+outputs
+I have 2 coconuts!
+
+print "The value of pi is around " + str("3.14")
+
+note str(2) because 2 is an integer
+have to put 3.14 in quotation makrs otherwise will error as float
+
+14/16 string formatting with % part 1
+
+When you want to print a variable with a string, there is a better method than concatenating strings together.
+
+name = "Mike"
+print "Hello %s" % (name)
+
+The % operator after a string is used to combine a string with variables. The % operator will replace a %s in the string with the string variable that comes after it.
+
+string_1 = "Camelot"
+string_2 = "place"
+
+print "Let's not go to %s. 'Tis a silly %s." % (string_1, string_2)
+
+15/16 string formatting with % part 2
+
+1/6 the datetime library
+
+2/6 getting the current date and time
+
+we can use a function called datetime.now() to retrieve the current date and time
+
+from datetime import datetime
+now = datetime.now()
+print now
+
+3/6 extracting info
+
+4/6 hot date
+
+2/15 compare closely
+simplest aspect of control flow, comparators
+
+19 <= 19
+True
+
+-22 >= -18
+False
+
+99 != (98+1)
+False
+
+conditionals and control flow
+
+4/15 how the tables have turned
+
+use at least 3 different comparators
+
+# Make me true!
+bool_one = 3 < 5  # We already did this one for you!
+
+# Make me false!
+bool_two = 5 > 6
+
+# Make me true!
+bool_three = 4 < 6
+
+# Make me false!
+bool_four = 5 == 6
+
+# Make me true!
+bool_five = 4 != 3 + 2
+
+5/15 to be and/or not to be
+
+boolean operators:
+
+and if X and Y are both true, then true
+
+or if X or Y, if either is true, then true
+
+not, which gives the opposite of the statement?
+A is true
+not A evaluates to false
+
+A is false
+not A evaluates to true
+
+6/15 and
+
+Set bool_one equal to the result of
+
+False and False
+
+bool_one = False
+
+Set bool_two equal to the result of
+
+-(-(-(-2))) == -2 and 4 >= 16 ** 0.5
+
+???
+i put 
+-(-(-(-2)))
+into IDLE, says it's 2
+
+-2 == 2
+in IDLE evaluates as False so there
+
+Set bool_three equal to the result of
+
+19 % 4 != 300 / 10 / 10 and False
+
+the insight is if one is false then the whole thing is false
+
+19 % 4 != 300 / 10 / 10
+is false, tried both in IDLE, simplifies to 
+
+3 != 3
+
+Set bool_four equal to the result of
+
+-(1 ** 2) < 2 ** 0 and 10 % 10 <= 20 - 10 * 2
+
+-(1 ** 2) = -1
+2**0 = 1
+-1 < 1
+
+10 % 10 = 0
+
+<=
+is less than OR equal to
+
+if either, true
+
+only false if left is greater than right
+
+4 <= 4
+true
+4 >= 4
+true
+5 <= 4
+false
+
+bool_four is True
+
+7/15 or
+returns true when at least one expression on either side of or is true
+
+Set bool_one equal to the result of
+
+2 ** 3 == 108 % 100 or 'Cleese' == 'King Arthur'
+
+Set bool_two equal to the result of
+
+True or False
+
+Set bool_three equal to the result of
+
+100 ** 0.5 >= 50 or False
+
+100 ** 0.5 = 10
+
+Set bool_five equal to the result of
+
+1 ** 100 == 100 ** 1 or 3 * 2 * 1 != 3 + 2 + 1
+
+1 =100 or
+3 * 2 * 1 = 6
+
+bool five is true
+wrong?
+mistake, was thinking multiplication = big
+6 != 6, both sides false
+
+8/15 not
+
+Set bool_one equal to the result of
+
+not True
+
+true
+
+Set bool_two equal to the result of
+
+not 3 ** 4 < 4 ** 3
+
+true
+
+Set bool_three equal to the result of
+
+not 10 % 3 <= 10 % 2
+
+true
+
+Set bool_four equal to the result of
+
+not 3 ** 2 + 4 ** 2 != 5 ** 2
+
+9 + 16
+
+not 25 != 25
+
+imagine a world where this is true, what's the opposite? cats and dogs, mass hysteria
+
+Set bool_five equal to the result of
+
+not not False
+
+got this wrong
+
+not False, true
+not not False, false
+
+not True, false
+not not True, true
+
+9/15 this and that! (or this, but not that!)
+
+just like wth arithmetic there's an order of operations for boolean operators
+
+not is evaluated first
+and is evanuated next
+or is evaluated last
+
+True or not False and False 
+returns True
+
+True or not False and False
+not first
+True or True and False
+and next
+True or False
+or, true
+
+Set bool_one equal to the result of
+
+False or not True and True
+
+false or false and true
+false or false
+false
+
+Set bool_two equal to the result of
+
+False and not True or True
+
+false and true or true
+true or true
+true
+
+Set bool_three equal to the result of
+
+True and not (False or False)
+true and not (false)
+true and true
+true
+
+Set bool_four equal to the result of
+
+not not True or False and not True
+
+not not true or false and false
+not false or false and false
+true or false and false
+nots done
+i dont think it matters, nots exclusively, resolve left to right or right ot left
+true or false
+true
+
+Set bool_five equal to the result of
+
+False or not (True and True)
+
+false or not(true)
+false or false
+false
+
+10/15 mix n match
+
+# Make me false!
+bool_one = (2 <= 2) and "Alpha" == "Bravo"  # We did this one for you!
+
+# Make me true!
+bool_two = True and True
+
+# Make me false!
+bool_three = False or False
+
+# Make me true!
+bool_four = not False
+
+# Make me true!
+bool_five = False or not False
+
+11/15 conditional statement syntax
+
+response = 
+
+answer = "Left"
+if answer == "Left":
+    print "This is the Verbal Abuse Room, you heap of parrot droppings!"
+    
+# Will the above print statement print to the console?
+# Set response to 'Y' if you think so, and 'N' if you think not.
+
+12/15 if you're having
+
+Remember, the syntax looks like this:
+
+if some_function():
+  # block line one
+  # block line two
+  # et cetera
+
+in the event that some_function() returns True, then the indented block of code after it will be executed. In the event that it returns False, then the indented block will be skipped.
+
+make sure you notice the colons at the end of the if statement. We've added them for you, but they're important.
+
+def using_control_once():
+    if 3 > 2:
+        return "Success #1"
+
+def using_control_again():
+    if 4 > 3:
+        return "Success #2"
+
+print using_control_once()
+print using_control_again()
+
+13/15 else problems, i feel bad for you son
+
+An if/else pair says: "If this expression is true, run this indented code block; otherwise, run this code after the else statement."
+
+Unlike if, else doesn't depend on an expression. For example:
+
+if 8 > 9:
+  print "I don't printed!"
+else:
+  print "I get printed!"
+
+14/15 i got 99 problems but a switch ain't one
+
+elif is short for "else if." wysiwyg, "otherwise, if the following expression is true, do this!"
+
+if 8 > 9:
+  print "I don't get printed!"
+elif 8 < 9:
+  print "I get printed!"
+else:
+  print "I also don't get printed!"
+
+when <= when <
+
+def greater_less_equal_5(answer):
+    if answer > 5:
+        return 1
+    elif answer < 5:          
+        return -1
+    else:
+        return 0
+        
+print greater_less_equal_5(4)
+print greater_less_equal_5(5)
+print greater_less_equal_5(6)
+
+15/15 the big if
+
+comparators > < >= <= == !=
+
+boolean operators
+and, or, not
+
+conditional statements
+if elif else
+
+# Complete the if and elif statements!
+def grade_converter(grade):
+    if grade >= 90:
+        return "A"
+    elif grade >= 80:
+        return "B"
+    elif grade >= 70:
+        return "C"
+    elif grade >= 65:
+        return "D"
+    else:
+        return "F"
+      
+# This should print an "A"      
+print grade_converter(92)
+
+# This should print a "C"
+print grade_converter(70)
+
+# This should print an "F"
+print grade_converter(61)
+
+1/11 break it down
+
+    Ask the user to input a word in English.
+    Make sure the user entered a valid word.
+    Convert the word from English to Pig Latin.
+    Display the translation result.
+
+2/11 ahoy
+print "Pig Latin"
+
+3/11 input
+
+name = raw_input("What's your name?")
+print name
+
+4/11 check yourself
+next ensure that the user actually typed something
+
+empty_string = ""
+if len(empty_string) > 0:
+  # Run this block.
+  # Maybe print something?
+else:
+  # That string must have been empty.
+
+was stuck on this for a while, forgot the colon on else
+
+print 'Welcome to the Pig Latin Translator!'
+
+# Start coding here!
+original = raw_input("Enter a word:")
+
+if len(original) > 0:
+  print original
+else:
+  print "empty"
+
+5/11 check yourself some more
+
+check that our string only contains letters
+
+x = "J123"
+x.isalpha()  # This will return 'False'
+
+//goofy way to introduce a method
+
+In the first line, we create a string with letters and numbers.
+
+The second line then runs the method .isalpha() which returns False since the string contains non-letter characters.
+
+You can use .isalpha() to check that a string doesn't contain any non-letter characters! 
+
+//isalpha, is alphabet only
+
+pop quiz, test code inputs
+
+7/11 ay bc
+
+pyg = "ay"
+
+8/11 word up
+The .lower() function does not modify the string itself, it simply returns a lowercase-version. 
+//semantics?
+
+inside your if statement:
+
+create a new variable called word that holds the .lower() -case conversion of the original
+
+pyg = "ay"
+
+original = raw_input("Enter a word")
+
+if len(original) > 0 and original.isalpha():
+  word = original.lower()
+  first = word[0]
+  print word
+  print first
+else:
+  print "empty"
+
+9/11 move it on back
+
