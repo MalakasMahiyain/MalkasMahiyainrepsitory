@@ -87,7 +87,7 @@ import pylab
 import numpy
 x = numpy.array(range(10))
 y = x**2
-pylab.plot(x,y)
+pylab.plot(y)
 pylab.show()
 
 ##pylab.plot([1,2,3,4], [1,2,3,4])
